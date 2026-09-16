@@ -1,8 +1,10 @@
 # Demo recording
 
-[Video file](media/flybrain-demo.mp4) ·
+[Open full-size video](https://github.com/user-attachments/assets/8d9eaca9-fe2e-406e-8ab2-85c195a9c235) ·
 [Download MP4](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4) ·
 [Reproduce this interaction](../README.md#reproduce-the-demo-interaction)
+
+https://github.com/user-attachments/assets/8d9eaca9-fe2e-406e-8ab2-85c195a9c235
 
 The 54.47-second clip shows the live English webpage's room, fly trajectory,
 3D neural activity and spike raster, composed with synchronized setting values
@@ -29,7 +31,8 @@ The original recording used source commit
 The interaction is preserved in this reproducible project.
 
 Format: H.264 MP4, 1440 × 900, 30 fps, silent, 6,367,295 bytes.
-The README's looping GIF contains the same complete clip at the original speed,
-reduced to 800 × 500 and 8 fps for inline preview. The MP4 is unchanged.
+Both READMEs embed the original MP4 as a GitHub video attachment with playback,
+seeking and fullscreen controls. The original file is also tracked at
+`docs/media/flybrain-demo.mp4` for download and offline viewing.
 The video and poster were recorded from this project; MaleCNS attribution is
 retained in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).

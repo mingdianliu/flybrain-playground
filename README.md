@@ -13,11 +13,13 @@ or a brain that learned to fly.
 
 ## Video demo — move the food, change the flight
 
-[![Watch the recorded food interaction: fly trajectory and simulated neural activity](docs/media/flybrain-demo-poster.png)](https://github.com/mingdianliu/flybrain-playground/blob/main/docs/media/flybrain-demo.mp4)
+[![Recorded food interaction: fly trajectory and simulated neural activity](docs/media/flybrain-demo-preview.gif)](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4)
 
-**[Watch the 54-second demo](https://github.com/mingdianliu/flybrain-playground/blob/main/docs/media/flybrain-demo.mp4)** ·
-[Download MP4](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4) ·
+**[Download the full 54-second MP4](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4)** ·
 [Recording details](docs/VIDEO.md)
+
+The preview above plays the complete clip at its original speed; download the
+1440 × 900 MP4 for readable neural plots and smooth 30 fps playback.
 
 At about **0:08**, the food moves from X −1.8 m to +1.6 m. Watch the fly's path
 and olfactory firing change with food guidance enabled. This recording combines

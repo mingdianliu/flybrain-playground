@@ -12,11 +12,13 @@
 
 ## 视频演示：移动食物，改变飞行轨迹
 
-[![观看食物交互录像：果蝇轨迹与模拟神经活动](docs/media/flybrain-demo-poster.png)](https://github.com/mingdianliu/flybrain-playground/blob/main/docs/media/flybrain-demo.mp4)
+[![食物交互录像：果蝇轨迹与模拟神经活动](docs/media/flybrain-demo-preview.gif)](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4)
 
-**[观看 54 秒演示视频](https://github.com/mingdianliu/flybrain-playground/blob/main/docs/media/flybrain-demo.mp4)** ·
-[下载 MP4](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4) ·
+**[下载完整 54 秒 MP4](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4)** ·
 [录制说明](docs/VIDEO.md)
+
+上方动态预览按原速播放完整片段；下载 1440 × 900、30 fps 的 MP4，
+可更清楚地查看神经图表。
 
 约 **第 8 秒**，食物从 X −1.8 米移到 +1.6 米；开启趋食辅助的果蝇随之改变轨迹，
 嗅觉放电也发生变化。视频由网页运行时的画布、同步设置读数和事件说明合成，

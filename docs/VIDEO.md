@@ -1,6 +1,6 @@
 # Demo recording
 
-[Watch the video](media/flybrain-demo.mp4) ·
+[Video file](media/flybrain-demo.mp4) ·
 [Download MP4](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4) ·
 [Reproduce this interaction](../README.md#reproduce-the-demo-interaction)
 
@@ -29,5 +29,7 @@ The original recording used source commit
 The interaction is preserved in this reproducible project.
 
 Format: H.264 MP4, 1440 × 900, 30 fps, silent, 6,367,295 bytes.
+The README's looping GIF contains the same complete clip at the original speed,
+reduced to 800 × 500 and 8 fps for inline preview. The MP4 is unchanged.
 The video and poster were recorded from this project; MaleCNS attribution is
 retained in [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).

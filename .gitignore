@@ -13,6 +13,7 @@ __pycache__/
 .sites-runtime/
 *.zip
 *.mp4
+!docs/media/flybrain-demo.mp4
 *.webm
 # Generated translations; edit canonical sources and data/english.json.
 web/*.en.mjs

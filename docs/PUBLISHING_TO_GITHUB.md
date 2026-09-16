@@ -58,7 +58,9 @@ gh release create v0.1.0 /path/to/malecns-v1.0-model.zip /path/to/SHA256SUMS.txt
 
 The prepared model retains MaleCNS CC BY 4.0 attribution. The independent official
 download/export route remains available even if a Release asset is unavailable.
-Keep raw tables, `work/`, `dist/` and recordings outside the Git history.
+Keep raw tables, `work/`, `dist/` and raw recordings outside the Git history.
+The short presentation clip in `docs/media/flybrain-demo.mp4` is intentionally
+tracked so that the README video stays available with the source.
 
 After uploading, inspect the Actions tab for the fast CI results. Full data
 reproduction is optional through **Run workflow → full_model**. No workflow

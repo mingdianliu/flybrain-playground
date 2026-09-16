@@ -11,6 +11,19 @@ neurons, illustrative sensory encoders and engineered flight control**. It is
 not a complete biophysical fly, an experimentally validated behavioral model,
 or a brain that learned to fly.
 
+## Video demo — move the food, change the flight
+
+[![Watch the recorded food interaction: fly trajectory and simulated neural activity](docs/media/flybrain-demo-poster.png)](https://github.com/mingdianliu/flybrain-playground/blob/main/docs/media/flybrain-demo.mp4)
+
+**[Watch the 54-second demo](https://github.com/mingdianliu/flybrain-playground/blob/main/docs/media/flybrain-demo.mp4)** ·
+[Download MP4](https://github.com/mingdianliu/flybrain-playground/raw/refs/heads/main/docs/media/flybrain-demo.mp4) ·
+[Recording details](docs/VIDEO.md)
+
+At about **0:08**, the food moves from X −1.8 m to +1.6 m. Watch the fly's path
+and olfactory firing change with food guidance enabled. This recording combines
+live webpage canvases with synchronized settings and event annotations; playback
+is unsped, while model time advances at the speed displayed in the video.
+
 ## What runs
 
 - The full **classified-neuron MaleCNS v1.0 graph**: 166,606 cells, 25,574,615
@@ -83,8 +96,8 @@ npm start
 
 The installer validates the extracted model against committed reference hashes.
 The archive is a distribution convenience; rebuilding from official sources is
-the independent reproduction path. Large data, recordings and build output are
-deliberately excluded from Git.
+the independent reproduction path. Large data, raw recordings and build output
+are excluded from Git; the short demonstration clip is included in `docs/media/`.
 
 ## Reproduce the demo interaction
 

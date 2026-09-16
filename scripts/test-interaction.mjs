@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import {FlightWorld,castRay,validPosition} from '../web/room-core.mjs';
+import {anatomyCoordinates} from '../web/brain-scene.mjs';
+const w=new FlightWorld({light:0,obstacles:false,lampOn:true,lamp:[0,1.65,-1],lampPower:1});
+const eye=[0,1.65,1];
+const forward=castRay(eye,0,0,w.config),back=castRay(eye,Math.PI,0,w.config);
+assert.ok(forward.brightness>back.brightness+.5,'Lamp is a directional sensory input');
+const far=castRay([0,1.65,2],0,0,w.config);assert.ok(far.brightness<forward.brightness,'Distance attenuates light');
+const off=castRay(eye,0,0,{...w.config,lampOn:false});assert.ok(off.brightness<.02);
+const twice=castRay(eye,0,0,{...w.config,lampPower:2});assert.ok(twice.brightness>forward.brightness*1.9);
+const shaded=castRay(eye,0,0,{...w.config,blockerOn:true,blocker:[0,1.65,0]});assert.equal(shaded.hit,'blocker');assert.ok(shaded.brightness<.02);assert.ok(shaded.range<1);
+assert.equal(castRay(eye,0,0,{...w.config,vision:false}).brightness,0);
+assert.ok(w.placeStart([1,1.2,2],-.8));w.reset(0);assert.deepEqual(w.p,[1,1.2,2]);assert.equal(w.yaw,-.8);
+assert.equal(w.placeStart([20,1,0]),false);assert.equal(validPosition([-.7,1,-.55],{...w.config,obstacles:true}),false);
+w.advance(.02,w.retina.map(r=>2+110*r.brightness));const before=[...w.p],clock=w.time;
+assert.ok(w.placeStart([-1,1.3,1],1));assert.deepEqual(w.p,before,'Changing the next start never teleports an active flight');assert.equal(w.time,clock);
+w.configure({lamp:[-2,1.65,0],lampPower:1.5});assert.equal(w.time,clock,'Moving light preserves the simulation clock');
+const normal=Math.max(...w.retina.map(r=>r.brightness));w.flash();assert.ok(w.snapshot().flash);assert.ok(Math.max(...w.retina.map(r=>r.brightness))>normal*2);
+for(let i=0;i<20;i++)w.advance(.02,w.retina.map(r=>2+110*r.brightness));assert.equal(w.snapshot().flash,false);
+w.reset(0);assert.equal(w.snapshot().flash,false);assert.deepEqual(w.p,[-1,1.3,1]);
+// The 3D renderer must preserve original distances, indices and missing positions.
+const nodes=[['a',0,0,0,0,10,20],['missing',0,0,0,null,null,null],['b',0,0,0,30,50,20]];
+const a=anatomyCoordinates(nodes);assert.deepEqual(a.ids,[0,2]);
+const distance=Math.hypot(...[0,1,2].map(i=>a.positions[i]-a.positions[i+3]));assert.ok(Math.abs(distance-.4)<1e-6);
+assert.ok(a.positions[1]>a.positions[4]);assert.equal(a.positions.length,6);
+console.log('PASS interaction: lamp direction/brightness/distance/occlusion, movable start, preserved clock, flash, collisions, exact 3D coordinate scale');

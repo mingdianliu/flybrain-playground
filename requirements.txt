@@ -1,0 +1,4 @@
+# Used only to rebuild the MaleCNS model from official Feather tables.
+# Tested with Python 3.14; these pins support Python 3.12 and newer.
+numpy==2.5.1
+pyarrow==24.0.0

@@ -1,0 +1,45 @@
+name: Reproducibility checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      full_model:
+        description: Download official source tables and run full-model checks (about 1.1 GB)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  fast:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm test
+  full-model:
+    if: github.event_name == 'workflow_dispatch' && inputs.full_model
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/prepare-data.py
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npm run test:full

@@ -1,0 +1,129 @@
+{
+  "dataset": "male-cns:v1.0",
+  "counts": {
+    "annotation_rows": 211577,
+    "excluded_unclassified": 44971,
+    "neurons": 166606,
+    "edges": 25574615,
+    "synapses": 124144950,
+    "soma_positions": 139659,
+    "unresolved_fast_sign_neurons": 11564,
+    "weight_bytes": 2
+  },
+  "files": {
+    "neurons.json.gz": {
+      "decoded_sha256": "f523901b33aaea36e7ff060bb0ca4559f59bea5abea378dc330a6febe10d954c",
+      "decoded_bytes": 6026942
+    },
+    "offsets.bin.gz": {
+      "decoded_sha256": "b31070d6b467b520e90cc948478e657daa59cf4d132e5beb40d1214e865973b1",
+      "decoded_bytes": 666428
+    },
+    "targets-00.bin.gz": {
+      "decoded_sha256": "ac7ee6032af2a7e3ef4250c80721b21a92906ed7f097e0dde5a51516959b1487",
+      "decoded_bytes": 8000000
+    },
+    "weights-00.bin.gz": {
+      "decoded_sha256": "118eb1c8d45cb44acd0ef8f9c48ed5de6d0989994c49e89a693ac32c38a6cf5f",
+      "decoded_bytes": 4000000
+    },
+    "targets-01.bin.gz": {
+      "decoded_sha256": "e36fe37e92e8f3fc4c79053588dd91c9e2c5550bee431e3f3fb2d5c5d5ee6ccd",
+      "decoded_bytes": 8000000
+    },
+    "weights-01.bin.gz": {
+      "decoded_sha256": "c23fcce8c29be4bf521880b3a3e0e0a56f8be971cb3111d2dedc4feac0c178aa",
+      "decoded_bytes": 4000000
+    },
+    "targets-02.bin.gz": {
+      "decoded_sha256": "89f47cffd0ef8a013327f8dde92bec4062af0766478c0423f28355dfc5bef835",
+      "decoded_bytes": 8000000
+    },
+    "weights-02.bin.gz": {
+      "decoded_sha256": "e8eed3155fae5f163427ff74103884277b482958c298d69b3f672096c6cb51b4",
+      "decoded_bytes": 4000000
+    },
+    "targets-03.bin.gz": {
+      "decoded_sha256": "3de3aa9279616866f86075053fcd8e0d10fd709288575cf11ad5fb0ecfd6943c",
+      "decoded_bytes": 8000000
+    },
+    "weights-03.bin.gz": {
+      "decoded_sha256": "9469a73093fe823b600a2378a4be0dab061a3a59de688523b896fc20f1c14a03",
+      "decoded_bytes": 4000000
+    },
+    "targets-04.bin.gz": {
+      "decoded_sha256": "41c7fdd65f2d8b0c220dd649c33d4f1c210124a952a380b4e254994b75ac2f0e",
+      "decoded_bytes": 8000000
+    },
+    "weights-04.bin.gz": {
+      "decoded_sha256": "dab64628e38548b2f8dbf7c95914c747ee84968a09e1e49f640f933e8d318f9e",
+      "decoded_bytes": 4000000
+    },
+    "targets-05.bin.gz": {
+      "decoded_sha256": "1f4805db2afa8212a0e9137e6baa48592342234bd1420b86096476be598f218b",
+      "decoded_bytes": 8000000
+    },
+    "weights-05.bin.gz": {
+      "decoded_sha256": "2244a0fcc7c2d6bf7043977cce23218cf5ff029f95cd079548a33e16b92bfac4",
+      "decoded_bytes": 4000000
+    },
+    "targets-06.bin.gz": {
+      "decoded_sha256": "d8a02b876a410f59c6ec1c96667db8ec1dda30f6b3698d3d65e5a77b22d385bd",
+      "decoded_bytes": 8000000
+    },
+    "weights-06.bin.gz": {
+      "decoded_sha256": "4e3f34d17056194665b6ad1bdef067a0f218f62a172b45b88a2ccb419278b8f5",
+      "decoded_bytes": 4000000
+    },
+    "targets-07.bin.gz": {
+      "decoded_sha256": "e7d44ce43398dea5f5ff312136e192dbc6df70141cf4339f17851dd72e759fa8",
+      "decoded_bytes": 8000000
+    },
+    "weights-07.bin.gz": {
+      "decoded_sha256": "3e0459725f1902ad1477f76d58a87c56a26d5a84e3b1f3c5c6da2654d0c948b0",
+      "decoded_bytes": 4000000
+    },
+    "targets-08.bin.gz": {
+      "decoded_sha256": "05f3c8a582146f700d637250509cf6758896a9926a2e8345515ee5cdc135bca7",
+      "decoded_bytes": 8000000
+    },
+    "weights-08.bin.gz": {
+      "decoded_sha256": "7ff6d3c05c39c5349a57d7d3af54655c67b92e589ee356151f043147432a19e0",
+      "decoded_bytes": 4000000
+    },
+    "targets-09.bin.gz": {
+      "decoded_sha256": "fe7dcbc1a4d0f13566119f3a50ae66366db846b5c5987c92128010b03e4bcc25",
+      "decoded_bytes": 8000000
+    },
+    "weights-09.bin.gz": {
+      "decoded_sha256": "d9ecdfddc8c95991bd39c566a3e5c6ee02d59db62fefe0a4589d5dcf54784a4e",
+      "decoded_bytes": 4000000
+    },
+    "targets-10.bin.gz": {
+      "decoded_sha256": "5cad27acd92740ddf1255f0733186575d11fc67c9a71afc6e938da1ac4cc0a64",
+      "decoded_bytes": 8000000
+    },
+    "weights-10.bin.gz": {
+      "decoded_sha256": "279e49e628968d7d167a2f514a468980220f674623b280b717de72f6bcde5ad4",
+      "decoded_bytes": 4000000
+    },
+    "targets-11.bin.gz": {
+      "decoded_sha256": "09c9ad37036ff3e3f0de78c227ddc72076e8fd3b8f17ad866c091a9be5c5e460",
+      "decoded_bytes": 8000000
+    },
+    "weights-11.bin.gz": {
+      "decoded_sha256": "e051f4bcf3787a396c923b5c00df04f877b7d09a2fb565755162eaca4a6026b3",
+      "decoded_bytes": 4000000
+    },
+    "targets-12.bin.gz": {
+      "decoded_sha256": "7ff183d548411d5acd6ec30a9c19732bbe692d124ebb75989290d30f6d88b052",
+      "decoded_bytes": 6298460
+    },
+    "weights-12.bin.gz": {
+      "decoded_sha256": "47551bbd7b3c5796b9be67f651536eae03aaf3845690475b229dd54d2ec0efb6",
+      "decoded_bytes": 3149230
+    }
+  },
+  "metadata_sha256": "63bd2e18fde06e8d6c0f56b33a31a33cc07363ae32575bef73328e11ac0afb37",
+  "room_inputs_sha256": "17c18fe2b2cf3fdb943243f44f729fef325acd79ec90ab5f71cc375ac02cf243"
+}

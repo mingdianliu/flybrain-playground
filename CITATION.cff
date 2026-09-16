@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this software and the original MaleCNS data when using this project."
+title: Flybrain Playground
+type: software
+version: 0.1.0
+date-released: 2026-09-15
+authors:
+  - family-names: Liu
+    given-names: Mingdian
+license: MIT
+abstract: "A browser playground linking a simplified LIF model of the classified MaleCNS connectome to interactive environmental stimuli and engineered flight control."
+repository-code: "https://github.com/mingdianliu/flybrain-playground"

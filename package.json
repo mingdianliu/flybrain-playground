@@ -1,0 +1,17 @@
+{
+  "name": "flybrain-playground",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive fly-brain playground using a full classified MaleCNS connectome, simplified LIF neurons and engineered flight control.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "start": "node scripts/build-english.mjs && node scripts/serve.mjs",
+    "build": "node scripts/build-static.mjs",
+    "preview": "node scripts/serve.mjs --dist",
+    "test": "node scripts/test-lif.mjs && node scripts/test-room.mjs && node scripts/test-interaction.mjs && node scripts/test-senses.mjs && node scripts/test-spike-history.mjs && node scripts/test-english.mjs && node scripts/test-server.mjs",
+    "test:full": "node scripts/test-room-full.mjs && node scripts/test-senses-full.mjs",
+    "benchmark": "node scripts/benchmark-full.mjs"
+  }
+}
